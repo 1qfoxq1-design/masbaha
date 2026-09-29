@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المسبحة الإلكترونية الاحترافية</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 1. إعلان Popunder (يتم تحميله في الـ head) -->
+    <script src="https://pl31561508.profitableratecpmnetwork.com/91/9a/e7/919ae752e3e83bd0b651bca89da420e9.js"></script>
+
+    <!-- 2. إعلان Social Bar -->
+    <script src="https://pl31561510.profitableratecpmnetwork.com/0e/fa/c2/0efac28f248813ef94bd29f7c1178f60.js"></script>
+</head>
+<body>
+
+    <!-- إعلان الشاشة المنبثقة (Popup / Modal) بالمنتصف مع زر X -->
+    <div id="interstitialModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeInterstitial()">&times;</button>
+            <div class="modal-body">
+                <!-- كود إعلان البنار داخل المودال -->
+                <script>
+                    atOptions = {
+                        'key' : '5dcf0f10621cfbd06c9588fd6ff4187a',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                    };
+                </script>
+                <script src="https://www.highrevenueformat.com/5dcf0f10621cfbd06c9588fd6ff4187a/invoke.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <!-- الإعلان العلوي الأول (Banner) -->
+    <div class="ad-container">
+        <script>
+            atOptions = {
+                'key' : '5dcf0f10621cfbd06c9588fd6ff4187a',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+        </script>
+        <script src="https://www.highrevenueformat.com/5dcf0f10621cfbd06c9588fd6ff4187a/invoke.js"></script>
+    </div>
+
+    <!-- كارت المسبحة الرئيسي -->
+    <div class="masbaha-card">
+        
+        <!-- نمط العد -->
+        <div class="mode-selector">
+            <button class="mode-btn active" id="btnModeUp" onclick="setMode('up')">عد تصاعدي</button>
+            <button class="mode-btn" id="btnModeDown" onclick="setMode('down')">عد تنازلي</button>
+        </div>
+
+        <!-- اختيار الأذكار -->
+        <div class="select-box">
+            <select id="dhikrSelect" onchange="onDhikrChange()">
+                <option value="سُبْحَانَ اللَّهِ">سُبْحَانَ اللَّهِ</option>
+                <option value="الْحَمْدُ لِلَّهِ">الْحَمْدُ لِلَّهِ</option>
+                <option value="لَا إِلَهَ إِلَّا اللَّهُ">لَا إِلَهَ إِلَّا اللَّهُ</option>
+                <option value="اللَّهُ أَكْبَرُ">اللَّهُ أَكْبَرُ</option>
+                <option value="أَسْتَغْفِرُ اللَّهَ">أَسْتَغْفِرُ اللَّهَ</option>
+            </select>
+        </div>
+
+        <!-- إدخال هدف العداد التنازلي -->
+        <div class="target-input-group" id="targetGroup">
+            <label for="targetInput">الهدف (العدد البدائي):</label>
+            <input type="number" id="targetInput" value="33" min="1" onchange="initCounter()">
+        </div>
+
+        <!-- العداد -->
+        <div class="counter-display" id="counter">0</div>
+        
+        <!-- زر التسبيح -->
+        <button class="btn-tap" id="tapBtn" onclick="count()">سبّح</button>
+
+        <!-- 3. إعلان Native Banner (وسط الكارت) -->
+        <div class="ad-container-inline">
+            <script async="async" data-cfasync="false" src="https://pl31561509.profitableratecpmnetwork.com/ac80b3dcc0d3082c9ecf9193784f2f31/invoke.js"></script>
+            <div id="container-ac80b3dcc0d3082c9ecf9193784f2f31"></div>
+        </div>
+
+        <!-- إضافة ذكر جديد -->
+        <div class="add-dhikr-box">
+            <input type="text" id="newDhikrInput" placeholder="أدخل ذكراً جديداً...">
+            <button onclick="addNewDhikr()">إضافة</button>
+        </div>
+
+        <!-- أزرار الإعادة -->
+        <div class="controls">
+            <button class="btn-action btn-reset" onclick="resetCounter()">إعادة ضبط العداد</button>
+        </div>
+    </div>
+
+    <!-- الإعلان السفلي تحت المسبحة -->
+    <div class="ad-container">
+        <script>
+            atOptions = {
+                'key' : '5dcf0f10621cfbd06c9588fd6ff4187a',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+        </script>
+        <script src="https://www.highrevenueformat.com/5dcf0f10621cfbd06c9588fd6ff4187a/invoke.js"></script>
+    </div>
+
+    <!-- إعلان شريط ثابت أسفل الشاشة -->
+    <div class="sticky-ad-container">
+        <script>
+            atOptions = {
+                'key' : '5dcf0f10621cfbd06c9588fd6ff4187a',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+        </script>
+        <script src="https://www.highrevenueformat.com/5dcf0f10621cfbd06c9588fd6ff4187a/invoke.js"></script>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
